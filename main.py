@@ -465,7 +465,7 @@ class Listing:
             if errorResult == True:
                 Sql.look_for_DD_in_models(self)
 
-    # after info is run through the calculator it comes here for further processing
+    #1 after info is run through the calculator it comes here for further processing
     def post_calculator(self, lotsList):
         creds = gspread.service_account(filename=r"Z:\ENTRY CSV\Inventory tool\Inventory.json")
         sheet = creds.open("New Inventory").worksheet('Inventory')
